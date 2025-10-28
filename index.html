@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Verborgener Zufalls‑Timer</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Verborgener Zufalls‑Timer</h1>
+
+    <label class="switch">
+      <input id="masterToggle" type="checkbox" aria-label="Timer ein/aus">
+      <span class="slider"></span>
+    </label>
+    <div id="status" class="status">Aus</div>
+
+    <details class="panel">
+      <summary>Optionen & Test</summary>
+      <button id="testBtn" class="btn">Test: Ding‑Dong abspielen</button>
+      <button id="notifyBtn" class="btn">Benachrichtigung anfragen</button>
+      <p class="hint">Der Countdown läuft unsichtbar. Nach jedem Ablauf startet automatisch ein neuer, zufälliger Zeitraum (3–43 Min).</p>
+    </details>
+
+    <footer>
+      <small>Installierbar als PWA. Audio & Benachrichtigungen benötigen eine Benutzeraktion (z. B. Schalter).</small>
+    </footer>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
